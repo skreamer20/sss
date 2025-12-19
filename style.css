@@ -62,7 +62,7 @@ a {
     background-color: var(--newbase-color);
 }
 
-.default-btn:active {
+  .default-btn:active {
     background-color: var(--base-color-active);
 }
 

@@ -79,7 +79,7 @@ a {
 .menu__link {
     position: relative;
     display: inline-block;
-    color: var(--base-color);
+    color: #cbc7c7;
     font-weight: 600;
     text-decoration: none;
     padding-bottom: 4px;

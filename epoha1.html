@@ -1,9 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Эпхоа 1-2</title>
+</head>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f4f6f8;
+    --text: #2c2c2c;
+    --accent: #2f80ed;
+    --card: #ffffff;
+}
+
+/* ОБЩЕЕ */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* ОБЛОЖКА */
+.hero {
+    height: 300px;
+    background: url("img/hero.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* КОНТЕНТ */
+.container {
+    max-width: 900px;
+    margin: -60px auto 40px;
+    background: var(--card);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+p {
+    margin-bottom: 22px;
+    text-align: justify;
+}
+
+/* КАРТИНКИ */
+.content-img {
+    width: 100%;
+    border-radius: 14px;
+    margin: 25px 0;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* КНОПКА */
+.back {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: rgb(147, 100, 158);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #511f64;
+    transform: translateY(-3px);
+}
+</style>
+    <!-- ОБЛОЖКА -->
+<header class="hero">
+    <div class="hero-overlay">
+        <h1>Эпоха 1–2</h1>
+        <p>Зарождение и раннее развитие Могилёва</p>
+    </div>
+</header>
+
+<div class="container">
     <p>В. Ф. Копытин утверждал, что Могилёв первоначально возник как сторожевой город-крепость в окружении 
         ремесленных и сельских поселений XI—XII веков. Он считал, что Могилёв в то время был городом-замком, 
         поставленным на южных границах Полоцкого княжества. Обилие курганов вокруг древнего центра Могилёва он 
@@ -22,6 +127,7 @@
  Этот список был составлен не раньше 1394 года. Нынешняя дата основания — 1267 год — была введена Н. Гортынским во второй
   половине XIX века, но документального подтверждения не имеет.
 </p>
+<img src="img/ep1.jpg" alt="Древний Могилёв" class="content-img">
 <p>
     О происхождении названия города достоверных сведений нет; имеются только предположения, предания и легенды. 
     В основе названия может лежать личное имя Могила, о чём свидетельствует наличие притяжательного суффикса «-ёв», 
@@ -31,6 +137,8 @@
      названия города с именем полоцкого князя Льва Владимировича, или Льва Могучего.
 Существует также версия о происхождении названия города от финно-угорского «могиляй» — «горы над водой».
 </p>
+<img src="img/ep2.jpg" alt="Могилёвский замок" class="content-img">
+
 <p>
     Очередной этап в развитии Могилёва начался в XII — первой половине XIII веков. Культурный слой, который говорит 
     о жизни людей, найден на территории замчища — на месте современного парка им. Горького, возле нынешних строений 
@@ -53,6 +161,8 @@
 В первой половине XIII века, вероятно, во время набега монголо-татары захватили и сожгли Могилёв. Это подтверждают 
 последние археологические исследования.
 </p>
+
+<img src="img/ep3.jpg" alt="Археологические находки" class="content-img">
 <p>
     В 1358 году Могилёв вошёл в состав Великого княжества Литовского. 
     Сразу после этого город становится центром могилёвской волости (Витебское воеводство) и одним из 
@@ -79,7 +189,12 @@
 5 декабря 1522 года Великий князь Литовский и Король Польский Сигизмунд I подписал грамоту князю В. 
 Соломерецкому на пожизненное владение замком и Могилёвской волостью.
 </p>
-</head>
+ <!-- КНОПКА -->
+    <div class="back">
+        <a href="index.html" class="btn">← Вернуться на главную</a>
+    </div>
+
+</div>
 <body>
     
 </body>

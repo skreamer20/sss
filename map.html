@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Интерактивная карта</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+<main>
+ 
+ 
+    <section class="map-section">
+         <!-- КНОПКА -->
+    <div class="back">
+        <a href="index.html" class="btn">← Вернуться на главную</a>
+    </div>
+    <div class="container">
+         
+        <h2 class="section-title"><span>Интерактивная</span> карта</h2>
+          <div id="map"></div>
+    </div>
+
+    <div id="map"></div>
+</section>
+</main>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    var map = L.map('map').setView([53.9, 30.33], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Архитектура
+    L.marker([53.898, 30.332]).addTo(map)
+        .bindPopup("<b>Могилёвская ратуша</b><br>Архитектура");
+
+    // Музей
+    L.marker([53.902, 30.334]).addTo(map)
+        .bindPopup("<b>Краеведческий музей</b><br>Музей");
+
+    // Памятник
+    L.marker([53.895, 30.328]).addTo(map)
+        .bindPopup("<b>Площадь Славы</b><br>Памятник");
+
+});
+</script>
+
+</body>
+</html>

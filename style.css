@@ -107,6 +107,40 @@ a {
     transform: scaleX(1);
 }
 
+.map-section {
+    background-color: var(--background-color-temn);
+    padding: 60px 0;
+}
+
+#map {
+    height: 900px;
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 12px;
+}
+
+/* КНОПКА */
+.back {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: rgb(147, 100, 158);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #511f64;
+    transform: translateY(-3px);
+}
+
 .header {
     background-color: var(--newbase-color);
 }

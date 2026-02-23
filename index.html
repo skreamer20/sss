@@ -27,6 +27,9 @@
             <nav class="menu header__menu" id="mobileMenu">
                 <ul class="menu__list header__menu-list">
                     <li class="menu__item">
+    <a href="map.html" class="menu__link">Карта</a>
+</li>
+                    <li class="menu__item">
                         <a href="#history" class="menu__link">История</a>
                     </li>
                     <li class="menu__item">
@@ -45,6 +48,7 @@
     </header>
 
     <main>
+        
         <section class="hero">
             <div class="container hero__container">
                 <div class="hero__content">
@@ -295,7 +299,24 @@
             <button id="successOkBtn" class="default-btn">Ок</button>
         </div>
     </div>
-    <script>
+<script>
+var map = L.map('map').setView([53.9, 30.33], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+}).addTo(map);
+
+// Архитектура
+L.marker([53.898, 30.332]).addTo(map)
+    .bindPopup("<b>Ратуша</b><br>Категория: Архитектура");
+
+// Музей
+L.marker([53.902, 30.334]).addTo(map)
+    .bindPopup("<b>Краеведческий музей</b><br>Категория: Музеи");
+
+// Памятник
+L.marker([53.895, 30.328]).addTo(map)
+    .bindPopup("<b>Площадь Славы</b><br>Категория: Памятники");
         window.addEventListener('load', function () {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });

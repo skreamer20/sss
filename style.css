@@ -144,11 +144,13 @@ a {
 .pp {
     align-items: center;
     max-width: 1200px;
-
+    
 }
 
 .header {
+    position: fixed;
     background-color: var(--newbase-color);
+    width: 1400px;
 }
 
 .header__container {
@@ -982,6 +984,7 @@ a {
     .burger {
         display: flex;
         margin-top: -20px;
+        margin-left: 460px;
     }
 
     .header__container {

@@ -175,6 +175,7 @@ a {
     background-color: var(--newbase-color);
     transition: opacity var(--transition-duration), background-color var(--transition-duration);
     outline: none;
+    text-decoration: none;
 }
 
 .header__logo img {
@@ -197,13 +198,7 @@ a {
     opacity: .8;
 }
 
-.header__logo:hover {
-    background-color: var(--newbase-color);
-}
 
-.header__logo:active {
-    background-color: var(--base-color-active);
-}
 
 .hero {
     background: linear-gradient(135deg, #454764, #1d1d1d);

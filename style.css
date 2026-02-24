@@ -283,7 +283,7 @@ a {
 /* кнопки фейк под загоолвом */
 .fake-button {
     padding: 10px 25px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 25px;
     color: white;
     font-weight: 600;

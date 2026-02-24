@@ -292,10 +292,7 @@ a {
     transition: background 0.3s, color 0.3s;
 }
 
-.fake-button:hover {
-    background: black;
-    color: white;
-}
+
 
 .about-company {
     background-color: var(--background-color-temn);

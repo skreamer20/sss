@@ -141,6 +141,12 @@ a {
     transform: translateY(-3px);
 }
 
+.pp {
+    align-items: center;
+    max-width: 1200px;
+
+}
+
 .header {
     background-color: var(--newbase-color);
 }

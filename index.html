@@ -301,26 +301,6 @@
         </div>
     </div>
 <script>
-var map = L.map('map').setView([53.9, 30.33], 13);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap'
-}).addTo(map);
-
-// Архитектура
-L.marker([53.898, 30.332]).addTo(map)
-    .bindPopup("<b>Ратуша</b><br>Категория: Архитектура");
-
-// Музей
-L.marker([53.902, 30.334]).addTo(map)
-    .bindPopup("<b>Краеведческий музей</b><br>Категория: Музеи");
-
-// Памятник
-L.marker([53.895, 30.328]).addTo(map)
-    .bindPopup("<b>Площадь Славы</b><br>Категория: Памятники");
-        window.addEventListener('load', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
 
         const modal = document.getElementById('modal');
         const openBtn = document.querySelector('.default-btn');
